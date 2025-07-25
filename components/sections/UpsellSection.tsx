@@ -53,7 +53,7 @@ export default function UpsellSection() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start mt-[34px]">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start">
             {/* Left side - Course info and image */}
             <div className="space-y-6">
               {/* Course Image */}
@@ -144,7 +144,7 @@ export default function UpsellSection() {
               </div>
 
               {/* Benefits Summary */}
-              <div className="bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl p-6 sm:p-8 border-2 border-[#daa821]/30 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20">
+              <div className="bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl p-6 sm:p-8 border-2 border-[#daa821]/30 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20" style={{marginTop: "34px"}}>
                 <h4 className="text-[#daa821] font-bold text-lg mb-4 text-center">🎁 O QUE VOCÊ RECEBE:</h4>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
