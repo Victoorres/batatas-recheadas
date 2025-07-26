@@ -70,7 +70,7 @@ export default function CourseContentSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
           {courseItems.map((item, index) => (
             <article
               key={index}

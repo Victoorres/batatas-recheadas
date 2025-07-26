@@ -51,10 +51,10 @@ export default function HeroSection() {
           🔥 CURSO MAIS ESPERADO DE {new Date().getFullYear()} 🔥
         </Badge>
 
-        <h1 className="text-4xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold mb-4 sm:mb-6  incandescent-title">
+        <h1 className="text-4xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold mb-10 sm:mb-6 neon-tube">
           DOMINE A ARTE DAS
           <br />
-          <span className="neon-tube">BATATAS RECHEADAS</span>
+          BATATAS RECHEADAS
         </h1>
 
         <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
