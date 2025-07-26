@@ -4,7 +4,7 @@ import CountdownTimer from "@/components/shared/CountdownTimer"
 
 export default function CountdownSection() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20">
+    <section className="py-12 sm:py-16 lg:py-20  bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20">
       <div className="container mx-auto text-center">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-center mb-6 incandescent-red">

@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <header className="py-12 sm:py-16 lg:py-20 px-4 text-center relative overflow-hidden">
+    <header className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20 text-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-[#daa821]/10 via-transparent to-[#1a1611]/20"></div>
 
       {/* Neon background effects */}
@@ -64,7 +64,7 @@ export default function HeroSection() {
         </p>
 
         {/* Video Section */}
-        <div className="max-w-5xl mx-auto mb-8 sm:mb-12 px-4">
+        <div className="max-w-5xl mx-auto mb-8 sm:mb-12">
           <div className="relative bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl overflow-hidden shadow-2xl border-2 border-[#daa821]/50 shadow-[#daa821]/20 hover:border-[#daa821]/80 transition-all duration-300 group">
             <video
               className="w-full aspect-video object-cover"

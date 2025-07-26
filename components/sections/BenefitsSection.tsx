@@ -46,7 +46,7 @@ export default function BenefitsSection() {
 
   return (
     <section
-      className="py-12 sm:py-16 lg:py-20 px-4 bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20"
+      className="py-12 sm:py-16 lg:py-20  bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20"
       aria-labelledby="benefits-heading"
     >
       <div className="container mx-auto">
