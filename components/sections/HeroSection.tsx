@@ -11,10 +11,13 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#daa821]/10 via-transparent to-[#1a1611]/20"></div>
 
       {/* Neon background effects */}
-  
+      <div className="absolute top-10 sm:top-20 left-1/4 w-32 sm:w-64 h-32 sm:h-64 bg-[#daa821]/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-10 sm:bottom-20 right-1/4 w-48 sm:w-96 h-48 sm:h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 sm:w-[600px] h-96 sm:h-[600px] bg-[#daa821]/5 rounded-full blur-3xl animate-pulse delay-500"></div>
+
       <div className="container mx-auto relative z-10">
         {/* Logo in Hero */}
-        <div className="mb-6 sm:mb-1">
+        <div className="mb-6 sm:mb-2">
           <div className="relative inline-block">
             <Image
               src="/logo.png"
@@ -27,79 +30,77 @@ export default function HeroSection() {
             <div className="absolute -inset-2 bg-[#daa821]/20 rounded-full blur-xl animate-pulse"></div>
           </div>
         </div>
+
         {/* Rating Section */}
         <div className="mb-6 sm:mb-8" itemScope itemType="https://schema.org/AggregateRating">
           <div className="flex items-center justify-center space-x-1 mb-3">
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}
-                className="w-6 sm:w-8 h-6 sm:h-8 text-yellow-400 fill-current drop-shadow-[0_0_10px_rgba(255,193,7,0.8)] hover:scale-125 transition-transform duration-200"
-                style={{ animationDelay: `${i * 0.1}s` }}
+                className="w-8 sm:w-10 lg:w-12 h-8 sm:h-10 lg:h-12 text-yellow-400 fill-current hover:scale-125 transition-transform duration-200"
+                style={{
+                  animationDelay: `${i * 0.1}s`,
+                  filter: 'drop-shadow(0 0 10px #fbbf24) drop-shadow(0 0 20px #f59e0b)',
+                }}
               />
             ))}
           </div>
         </div>
-        <Badge className="bg-gradient-to-r from-[#daa821] to-yellow-400 text-[#010100] mb-4 sm:mb-6 px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold shadow-lg shadow-[#daa821]/30 animate-bounce">
+
+        <Badge className="bg-gradient-to-r from-[#daa821] to-yellow-400 text-[#010100] mb-4 sm:mb-6 px-4 sm:px-6 py-3 text-sm sm:text-base lg:text-lg font-semibold shadow-lg shadow-[#daa821]/30 animate-bounce">
           🔥 CURSO MAIS ESPERADO DE {new Date().getFullYear()} 🔥
         </Badge>
 
-        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-[#daa821] via-yellow-400 to-[#daa821] bg-clip-text text-transparent drop-shadow-2xl animate-pulse">
+        <h1 className="text-4xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold mb-4 sm:mb-6  incandescent-title">
           DOMINE A ARTE DAS
           <br />
-          <span className="text-white drop-shadow-[0_0_30px_rgba(214,194,124,0.8)] hover:drop-shadow-[0_0_50px_rgba(214,194,124,1)] transition-all duration-300">
-            BATATAS RECHEADAS
-          </span>
+          <span className="neon-tube">BATATAS RECHEADAS</span>
         </h1>
 
-        <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-lg px-4">
+        <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-gray-300 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-4">
           Transforme batatas simples em pratos gourmet irresistíveis e
-          <span className="text-[#daa821] font-semibold drop-shadow-[0_0_10px_rgba(214,194,124,0.8)] animate-pulse">
-            {' '}
-            fature alto{' '}
-          </span>
+          <span className="incandescent-soft font-semibold"> fature alto </span>
           com receitas exclusivas que seus clientes vão amar!
         </p>
 
         {/* Video Section */}
-        <div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-4">
+        <div className="max-w-5xl mx-auto mb-8 sm:mb-12 px-4">
           <div className="relative bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl overflow-hidden shadow-2xl border-2 border-[#daa821]/50 shadow-[#daa821]/20 hover:border-[#daa821]/80 transition-all duration-300 group">
             <video
               className="w-full aspect-video object-cover"
               controls
+              controlsList="nodownload"
               poster="/batata_recheada_3.jpeg"
               preload="metadata"
             >
-              {/* <source
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/chef_com_batata-jzOwWZ9a7tjXFZafZ8Wx9OI7xQWU99.mp4"
-                type="video/mp4"
-              /> */}
+              <source src="/video/intro.mp4" type="video/mp4" />
               Seu navegador não suporta vídeos HTML5.
             </video>
           </div>
-          <p className="text-[#daa821] text-sm mt-4 font-semibold animate-bounce">
+          <p className="incandescent-glow text-base sm:text-lg lg:text-xl mt-4 font-semibold animate-bounce">
             👆 Assista ao vídeo e descubra como transformar sua vida!
           </p>
         </div>
 
         {/* Price and CTA */}
         <div
-          className="bg-gradient-to-br from-[#1a1611] via-[#1a1611] to-[#0f0d0a] rounded-2xl p-6 sm:p-8 max-w-md mx-auto border-2 border-[#daa821]/50 shadow-2xl shadow-[#daa821]/20 hover:shadow-[#daa821]/40 transition-all duration-300 hover:scale-105"
+          className="bg-gradient-to-br from-[#1a1611] via-[#1a1611] to-[#0f0d0a] rounded-2xl p-8 sm:p-10 lg:p-12 max-w-lg mx-auto border-2 border-[#daa821]/50 shadow-2xl shadow-[#daa821]/20 hover:shadow-[#daa821]/40 transition-all duration-300 hover:scale-105"
           itemScope
           itemType="https://schema.org/Offer"
         >
           <div className="text-center mb-6">
-            <p className="text-gray-400 text-sm mb-2">OFERTA ESPECIAL</p>
+            <p className="text-gray-400 text-base sm:text-lg mb-2">OFERTA ESPECIAL</p>
             <div className="flex items-center justify-center space-x-2 mb-2">
-              <span className="text-gray-500 line-through text-lg">R$ 197,00</span>
-              <Badge className="bg-red-600 text-white animate-pulse hover:bg-red-500">-75%</Badge>
+              <span className="text-gray-500 line-through text-xl sm:text-2xl">R$ 197,00</span>
+              <Badge className="bg-red-600 text-white animate-pulse text-sm sm:text-base hover:bg-red-500">-75%</Badge>
             </div>
-            <div className="text-3xl sm:text-4xl font-bold text-[#daa821] mb-2 drop-shadow-[0_0_20px_rgba(214,194,124,0.8)] animate-pulse">
+            <div className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 incandescent-soft pulse-glow">
               <span itemProp="price" content="49.99">
                 R$ 49,99
               </span>
               <meta itemProp="priceCurrency" content="BRL" />
             </div>
-            <p className="text-sm text-gray-400">ou 12x de R$ 4,99</p>
+            <p className="text-base sm:text-lg text-gray-400">ou 12x de R$ 4,99</p>
             <meta itemProp="availability" content="https://schema.org/InStock" />
           </div>
 

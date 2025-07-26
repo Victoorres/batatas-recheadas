@@ -5,54 +5,59 @@ import Image from 'next/image';
 export default function BenefitsSection() {
   const benefits = [
     {
-      image: '/exclusivo.jpg',
-      title: 'Receitas Exclusivas',
-      description: 'Mais de 50 receitas únicas que você não encontra em lugar nenhum',
-      highlight: '50+ Receitas',
+      image: '/batata_recheada_3.jpeg',
+      title: 'Receitas Testadas e Aprovadas',
+      description: 'Mais de 50 receitas criadas por profissionais e validadas por centenas de alunos em todo o Brasil.',
+      highlight: '50+ Receitas Infalíveis',
     },
     {
-      image: '/vip-pass.png',
-      title: 'Comunidade VIP',
-      description: 'Acesso ao grupo exclusivo com outros empreendedores do ramo',
-      highlight: 'Grupo VIP',
+      image: '/grupo-apoio.jpeg',
+      title: 'Grupo de Apoio Exclusivo',
+      description:
+        'Acesso a uma comunidade ativa no WhatsApp com dicas, feedbacks e trocas entre alunos e instrutores.',
+      highlight: 'Networking Real',
     },
     {
-      image: '/full-hd-icon.png',
-      title: 'Aulas em Vídeo HD',
-      description: 'Conteúdo gravado em alta qualidade com todos os detalhes',
-      highlight: 'Vídeos HD',
+      image: '/montando-batata.jpg',
+      title: 'Aulas Passo a Passo em Vídeo',
+      description: 'Aprenda visualmente com vídeos em alta qualidade mostrando cada etapa da receita, sem enrolação.',
+      highlight: '100% Prático',
     },
     {
-      image: '/acesso-vitalicio.png',
-      title: 'Acesso Vitalício',
-      description: 'Estude no seu ritmo, quando e onde quiser, para sempre',
-      highlight: 'Para Sempre',
+      image: '/video-aulas.jpg',
+      title: 'Acesso Vitalício Garantido',
+      description: 'Volte às aulas sempre que quiser, sem limite de tempo. Atualizações futuras inclusas.',
+      highlight: 'Atualizações Grátis',
     },
     {
-      image: "/batata_recheada_7.jpeg",
-      title: 'Vídeo Aula Completa',
-      description: 'Aula prática com passo a passo das receitas, direto da cozinha!',
-      highlight: 'Didática Completa',
+      image: '/batata_recheada_7.jpeg',
+      title: 'Receitas que Vendem!',
+      description:
+        'Aprenda receitas com alto potencial de lucro, testadas em vendas reais em feiras, deliveries e eventos.',
+      highlight: 'Lucro na Cozinha',
     },
     {
-      image: '/suporte-24-horas.webp',
-      title: 'Suporte Especializado',
-      description: 'Tire suas dúvidas diretamente com profissionais experientes',
-      highlight: 'Suporte 24h',
+      image: '/cheff.jpg',
+      title: 'Suporte com Especialistas',
+      description: 'Tire dúvidas diretamente com quem vive de comida e sabe o que realmente funciona.',
+      highlight: 'Acompanhamento Profissional',
     },
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 px-4 bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20">
+    <section
+      className="py-12 sm:py-16 lg:py-20 px-4 bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20"
+      aria-labelledby="benefits-heading"
+    >
       <div className="container mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <h2
             id="benefits-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4 text-[#daa821] drop-shadow-[0_0_20px_rgba(218,168,33,0.8)] animate-pulse"
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-center mb-6 incandescent-title"
           >
             Por que escolher o BatataCheff?
           </h2>
-          <p className="text-lg sm:text-xl text-gray-300 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
+          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 text-center mb-12 sm:mb-16 max-w-4xl mx-auto px-4">
             Mais de 10.000 alunos já transformaram suas vidas com nossas receitas exclusivas
           </p>
         </div>
@@ -65,7 +70,7 @@ export default function BenefitsSection() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Image Background */}
-              <div className="relative h-60 overflow-hidden">
+              <div className="relative h-48 sm:h-56 overflow-hidden">
                 <Image
                   src={benefit.image || '/placeholder.svg'}
                   alt={benefit.title}
@@ -76,18 +81,18 @@ export default function BenefitsSection() {
 
                 {/* Highlight Badge */}
                 <div className="absolute top-4 right-4">
-                  <span className="bg-[#daa821] text-black px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  <span className="bg-[#daa821] text-black px-3 py-2 rounded-full text-sm sm:text-base font-bold shadow-lg">
                     {benefit.highlight}
                   </span>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-white group-hover:text-[#daa821] transition-colors duration-300">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 text-white group-hover:text-[#daa821] transition-colors duration-300 incandescent-glow">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-300 text-sm leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                <p className="text-gray-300 text-base sm:text-lg leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
                   {benefit.description}
                 </p>
               </div>

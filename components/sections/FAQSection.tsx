@@ -55,33 +55,33 @@ export default function FAQSection() {
         <div className="text-center mb-12 sm:mb-16">
           <h2
             id="faq-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4 text-[#daa821] drop-shadow-[0_0_20px_rgba(218,168,33,0.8)] animate-pulse"
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-center mb-6 incandescent-title"
           >
             Perguntas frequentes
           </h2>
-          <p className="text-lg sm:text-xl text-gray-300 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
+          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 text-center mb-12 sm:mb-16 max-w-4xl mx-auto px-4">
             Tire todas as suas dúvidas sobre o curso
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+        <div className="max-w-5xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-6">
             {faqs.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-gradient-to-r from-[#1a1611]/80 to-[#0f0d0a]/80 border border-[#daa821]/30 rounded-lg px-6 hover:border-[#daa821]/60 transition-all duration-300"
+                className="bg-gradient-to-r from-[#1a1611]/80 to-[#0f0d0a]/80 border border-[#daa821]/30 rounded-lg px-8 py-2 hover:border-[#daa821]/60 transition-all duration-300"
                 itemScope
                 itemType="https://schema.org/Question"
               >
                 <AccordionTrigger
-                  className="text-left text-white hover:text-[#daa821] transition-colors duration-300 text-base sm:text-lg font-semibold"
+                  className="text-left text-white hover:text-[#daa821] transition-colors duration-300 text-lg sm:text-xl lg:text-2xl font-semibold"
                   itemProp="name"
                 >
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent
-                  className="text-gray-300 text-sm sm:text-base leading-relaxed pt-4"
+                  className="text-gray-300 text-base sm:text-lg lg:text-xl leading-relaxed pt-6"
                   itemProp="acceptedAnswer"
                   itemScope
                   itemType="https://schema.org/Answer"

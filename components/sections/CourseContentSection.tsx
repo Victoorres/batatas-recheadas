@@ -1,4 +1,4 @@
-'use client';
+"use client"
 
 export default function CourseContentSection() {
   const courseItems = [
@@ -7,12 +7,6 @@ export default function CourseContentSection() {
       title: 'Como Atrair Mais Clientes',
       description: 'Estratégias simples e eficazes para vender todos os dias',
       alt: 'Batata recheada servida em embalagem elegante com fundo desfocado e lettering chamativo',
-    },
-    {
-      image: '/batata_recheada_3.jpeg',
-      title: 'As Receitas Que Mais Vendem',
-      description: 'Descubra os sabores que conquistam os clientes e multiplicam os pedidos',
-      alt: 'Batata recheada gourmet com efeito dramático de fogo e ingredientes frescos',
     },
     {
       image: '/batata_recheada_4.jpeg',
@@ -56,7 +50,7 @@ export default function CourseContentSection() {
       description: 'Otimize suas entregas e fidelize seus clientes com excelência',
       alt: 'Batata recheada pronta para delivery com apresentação impecável',
     },
-  ];
+  ]
 
   return (
     <section
@@ -67,35 +61,35 @@ export default function CourseContentSection() {
         <div className="text-center mb-12 sm:mb-16">
           <h2
             id="course-content-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4 text-[#daa821] drop-shadow-[0_0_20px_rgba(218,168,33,0.8)] animate-pulse"
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-center mb-6 incandescent-title"
           >
             O que você vai aprender
           </h2>
-          <p className="text-lg sm:text-xl text-gray-300 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
+          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 text-center mb-12 sm:mb-16 max-w-4xl mx-auto px-4">
             Conteúdo completo e estruturado para você se tornar um expert
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-7xl mx-auto">
           {courseItems.map((item, index) => (
             <article
               key={index}
-              className="bg-gradient-to-br from-[#1a1611]/90 to-[#0f0d0a]/90 border-2 border-[#daa821]/30 hover:border-[#daa821]/80 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-[#daa821]/30 group overflow-hidden rounded-lg p-4 sm:p-6 text-center"
+              className="bg-gradient-to-br from-[#1a1611]/90 to-[#0f0d0a]/90 border-2 border-[#daa821]/30 hover:border-[#daa821]/80 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-[#daa821]/30 group overflow-hidden rounded-lg p-6 sm:p-8 text-center"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative mb-4 mx-auto w-20 h-20 sm:w-24 sm:h-24 lg:w-40 lg:h-40">
+              <div className="relative mb-6 mx-auto w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#daa821]/20 to-green-500/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
                 <img
-                  src={item.image || '/placeholder.svg'}
+                  src={item.image || "/placeholder.svg"}
                   alt={item.alt}
                   className="relative w-full h-full object-cover rounded-full border-2 border-[#daa821]/50 group-hover:border-[#daa821] transition-all duration-300 group-hover:scale-110"
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-sm sm:text-base lg:text-lg font-bold mb-2 text-white group-hover:text-[#daa821] transition-colors duration-300 leading-tight">
+              <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold mb-3 text-white group-hover:text-[#daa821] transition-colors duration-300 leading-tight incandescent-glow">
                 {item.title}
               </h3>
-              <p className="text-xs sm:text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
                 {item.description}
               </p>
             </article>
@@ -103,5 +97,5 @@ export default function CourseContentSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

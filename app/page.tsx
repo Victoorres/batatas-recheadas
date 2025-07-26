@@ -15,12 +15,12 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[#010100] text-white overflow-x-hidden">
       <HeroSection />
-      {/* <BenefitsSection /> */}
+      <BenefitsSection />
       {/* <ImageShowcase /> */}
       <CourseContentSection />
       {/* <CountdownSection /> */}
-      <UpsellSection />
       <TestimonialsSection />
+      <UpsellSection />
       <FinalCTASection />
       <FAQSection />
       <Footer />

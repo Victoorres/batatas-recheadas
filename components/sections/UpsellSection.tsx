@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { CheckCircle, Star } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import CountdownTimer from '@/components/shared/CountdownTimer';
 
 export default function UpsellSection() {
@@ -23,9 +23,9 @@ export default function UpsellSection() {
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8 sm:mb-12">
-            {/* <Badge className="bg-gradient-to-r from-[#daa821] to-yellow-400 text-white mb-4 px-4 py-2 text-sm font-semibold shadow-lg shadow-[#daa821]/30 animate-bounce">
-              🍝 OFERTA ESPECIAL COMBO
-            </Badge> */}
+            <Badge className="bg-gradient-to-r from-[#daa821] to-yellow-400 text-white mb-4 px-4 py-2 text-sm font-semibold shadow-lg shadow-[#daa821]/30 animate-bounce">
+              ⚠️ OFERTA ESPECIAL COMBO ⚠️
+            </Badge>
 
             {/* Combo Countdown Timer */}
             <div className="bg-gradient-to-r from-[#1a1611]/80 to-[#0f0d0a]/80 rounded-xl p-4 mb-6 border border-[#daa821]/30 max-w-md mx-auto">
@@ -40,16 +40,16 @@ export default function UpsellSection() {
 
             <h2
               id="upsell-heading"
-              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4 text-[#daa821] drop-shadow-[0_0_20px_rgba(218,168,33,0.8)] animate-pulse"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4 incandescent-title"
             >
-              <span className="block text-[#daa821] text-2xl sm:text-3xl mb-2">Oferta especial</span>
+              <span className="block incandescent-subtitle text-2xl sm:text-3xl mb-2">Oferta especial</span>
               Leve também a Macarronada Gourmet
             </h2>
 
-            <p className="text-lg sm:text-xl text-gray-300 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4">
+            <p className="text-lg sm:text-xl text-gray-300 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4 incandescent-soft font-semibold">
               Já que você está investindo no seu futuro, que tal
-              <span className="text-[#daa821] font-semibold"> duplicar suas opções de receitas </span>e ter ainda mais
-              formas de faturar?
+              <span className="incandescent-soft font-semibold"> duplicar suas opções de receitas </span>e ter ainda
+              mais formas de faturar?
             </p>
           </div>
 
@@ -70,14 +70,14 @@ export default function UpsellSection() {
               </div>
 
               {/* Course Features */}
-              <div className="bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl p-6 sm:p-8 border-2 border-[#daa821]/30 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20">
+              <div className="bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl p-6 sm:p-8 border-2 border-[#daa821]/30 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20" style={{marginTop: "38px"}}>
                 <div className="flex items-center mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#daa821] to-yellow-400 rounded-full flex items-center justify-center mr-4">
                     <span className="text-2xl">🍝</span>
                   </div>
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">Macarronada Gourmet</h3>
-                    <p className="text-[#daa821] font-semibold">Curso Completo</p>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-1">MACARRONADA GOURMET</h3>
+                    <p className="text-[#daa821] font-semibold">CURSO COMPLETO</p>
                   </div>
                 </div>
 
@@ -104,7 +104,7 @@ export default function UpsellSection() {
               {/* Pricing Comparison */}
               <div className="bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl p-6 sm:p-8 border-2 border-[#daa821]/30 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20">
                 <div className="text-center mb-6">
-                  <p className="text-[#daa821] font-semibold mb-4 text-lg">🎯 COMPARAÇÃO DE PREÇOS</p>
+                  <p className="text-[#daa821] font-semibold mb-4 text-lg">COMPARAÇÃO DE PREÇOS</p>
 
                   {/* Individual Prices */}
                   <div className="space-y-4 mb-6">
@@ -126,8 +126,10 @@ export default function UpsellSection() {
 
                   {/* Combo Price */}
                   <div className="bg-gradient-to-r from-green-600/20 to-[#daa821]/20 rounded-xl p-4 border border-green-500/30 mb-6">
-                    <p className="text-green-400 font-semibold text-lg mb-2">💰 PREÇO DO COMBO</p>
-                    <p className="text-3xl font-bold text-green-400 mb-2">R$ 89,99</p>
+                    <p className="text-green-400 font-semibold text-lg mb-2">PREÇO DO COMBO</p>
+                    <p className="text-4xl sm:text-5xl lg:text-6xl font-bold text-green-400 mb-2 incandescent-green-soft pulse-glow">
+                      R$ 89,99
+                    </p>
                     <p className="text-sm text-gray-300">Economia de R$ 19,99</p>
                   </div>
                 </div>
@@ -144,8 +146,8 @@ export default function UpsellSection() {
               </div>
 
               {/* Benefits Summary */}
-              <div className="bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl p-6 sm:p-8 border-2 border-[#daa821]/30 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20" style={{marginTop: "34px"}}>
-                <h4 className="text-[#daa821] font-bold text-lg mb-4 text-center">🎁 O QUE VOCÊ RECEBE:</h4>
+              <div className="bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl p-6 sm:p-8 border-2 border-[#daa821]/30 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20">
+                <h4 className="text-[#daa821] font-bold text-lg mb-4 text-center">O QUE VOCÊ RECEBE</h4>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
@@ -157,7 +159,7 @@ export default function UpsellSection() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
-                    <span className="text-gray-300 text-sm">80+ receitas exclusivas no total</span>
+                    <span className="text-gray-300 text-sm">20+ receitas exclusivas no total</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
@@ -175,9 +177,10 @@ export default function UpsellSection() {
               </div>
             </div>
           </div>
+
           {/* Urgency Message */}
-          <div className="bg-yellow-600/10 border border-yellow-500/30 rounded-lg p-4 text-center mt-8">
-            <p className="text-yellow-400 font-semibold text-sm mb-1">⚡ ATENÇÃO: Oferta por tempo limitado!</p>
+          <div className="bg-yellow-600/10 rounded-2xl p-6 sm:p-8 border-2 border-[#daa821]/30 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20 text-center mt-8">
+            <p className="text-yellow-400 font-semibold text-sm mb-1">ATENÇÃO: Oferta por tempo limitado!</p>
             <p className="text-gray-300 text-xs">
               Esta é uma oferta exclusiva para quem está adquirindo o curso de Batatas Recheadas hoje.
             </p>
