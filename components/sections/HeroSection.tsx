@@ -48,7 +48,7 @@ export default function HeroSection() {
         </div>
 
         <Badge className="bg-gradient-to-r from-[#daa821] to-yellow-400 text-[#010100] mb-4 sm:mb-6 px-4 sm:px-6 py-3 text-sm sm:text-base lg:text-lg font-semibold shadow-lg shadow-[#daa821]/30 animate-bounce">
-          🔥 CURSO MAIS ESPERADO DE {new Date().getFullYear()} 🔥
+          🔥 CURSO QUE VAI MUDAR SUA VIDA FINANCEIRA 🔥
         </Badge>
 
         <h1 className="text-4xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold mb-10 sm:mb-6 neon-tube">
@@ -67,10 +67,10 @@ export default function HeroSection() {
         <div className="max-w-5xl mx-auto mb-8 sm:mb-12">
           <div className="relative bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl overflow-hidden shadow-2xl border-2 border-[#daa821]/50 shadow-[#daa821]/20 hover:border-[#daa821]/80 transition-all duration-300 group">
             <video
-              className="w-full aspect-video object-cover"
+              className="w-full object-cover"
               controls
               controlsList="nodownload"
-              poster="/batata_recheada_3.jpeg"
+              poster="/intro-video.jpeg"
               preload="metadata"
             >
               <source src="/video/intro.mp4" type="video/mp4" />
@@ -91,23 +91,23 @@ export default function HeroSection() {
           <div className="text-center mb-6">
             <p className="text-gray-400 text-base sm:text-lg mb-2">OFERTA ESPECIAL</p>
             <div className="flex items-center justify-center space-x-2 mb-2">
-              <span className="text-gray-500 line-through text-xl sm:text-2xl">R$ 197,00</span>
-              <Badge className="bg-red-600 text-white animate-pulse text-sm sm:text-base hover:bg-red-500">-75%</Badge>
+              <span className="text-gray-500 line-through text-xl sm:text-2xl">R$ 54,99</span>
+              <Badge className="bg-red-600 text-white animate-pulse text-sm sm:text-base hover:bg-red-500">-54%</Badge>
             </div>
             <div className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2 incandescent-soft pulse-glow">
               <span itemProp="price" content="49.99">
-                R$ 49,99
+                R$ 24,99
               </span>
               <meta itemProp="priceCurrency" content="BRL" />
             </div>
-            <p className="text-base sm:text-lg text-gray-400">ou 12x de R$ 4,99</p>
+            <p className="text-base sm:text-lg text-gray-400">ou 5x de R$ 5,53</p>
             <meta itemProp="availability" content="https://schema.org/InStock" />
           </div>
 
           <Button
             className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-base sm:text-lg transition-all duration-300 shadow-lg shadow-green-600/30 animate-pulse-scale hover:shadow-green-600/50"
-            onClick={() => window.open('https://monetizze.com.br', '_blank')}
-            aria-label="Comprar curso de batatas recheadas por R$ 49,99"
+            onClick={() => window.open('https://pay.kiwify.com.br/3JLz0aS', '_blank')}
+            aria-label="Comprar curso de batatas recheadas por R$ 24,99"
           >
             🚀 GARANTIR ACESSO
           </Button>

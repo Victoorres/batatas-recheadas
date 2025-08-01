@@ -7,7 +7,7 @@ import CountdownTimer from '@/components/shared/CountdownTimer';
 
 export default function UpsellSection() {
   const courseFeatures = [
-    '30+ receitas exclusivas de macarronada',
+    'receitas exclusivas que vai alavancar seu negócio',
     'Técnicas de preparo profissional',
     'Molhos especiais e combinações únicas',
     'Estratégias de precificação e vendas',
@@ -93,7 +93,7 @@ export default function UpsellSection() {
                 <div className="border-t border-[#daa821]/20 pt-6">
                   <div className="text-center">
                     <p className="text-gray-400 text-sm mb-2">Valor individual do curso:</p>
-                    <p className="text-2xl font-bold text-[#daa821] mb-4">R$ 59,99</p>
+                    <p className="text-2xl font-bold text-[#daa821] mb-4">de R$ 19,99 por R$ 12,99</p>
                   </div>
                 </div>
               </div>
@@ -110,11 +110,11 @@ export default function UpsellSection() {
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center justify-between p-3 bg-[#1a1611]/50 rounded-lg border border-[#daa821]/20">
                       <span className="text-gray-300">Batatas Recheadas</span>
-                      <span className="text-[#daa821] font-bold">R$ 49,99</span>
+                      <span className="text-[#daa821] font-bold">R$ 19,99</span>
                     </div>
                     <div className="flex items-center justify-between p-3 bg-[#1a1611]/50 rounded-lg border border-[#daa821]/20">
                       <span className="text-gray-300">Macarronada Gourmet</span>
-                      <span className="text-[#daa821] font-bold">R$ 59,99</span>
+                      <span className="text-[#daa821] font-bold">R$ 19,99</span>
                     </div>
                     <div className="border-t border-[#daa821]/30 pt-3">
                       <div className="flex items-center justify-between">

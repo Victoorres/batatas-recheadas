@@ -5,39 +5,39 @@ import Image from 'next/image';
 export default function BenefitsSection() {
   const benefits = [
     {
-      image: '/batata_recheada_3.jpeg',
+      image: '/batata_recheada_13.jpeg',
       title: 'Receitas Testadas e Aprovadas',
       description: 'Mais de 50 receitas criadas por profissionais e validadas por centenas de alunos em todo o Brasil.',
       highlight: '50+ Receitas Infalíveis',
     },
     {
-      image: '/grupo-apoio.jpeg',
+      image: '/batata_recheada_14.jpeg',
       title: 'Grupo de Apoio Exclusivo',
       description:
         'Acesso a uma comunidade ativa no WhatsApp com dicas, feedbacks e trocas entre alunos e instrutores.',
       highlight: 'Networking Real',
     },
     {
-      image: '/montando-batata.jpg',
+      image: '/batata_recheada_15.jpeg',
       title: 'Aulas Passo a Passo em Vídeo',
       description: 'Aprenda visualmente com vídeos em alta qualidade mostrando cada etapa da receita, sem enrolação.',
       highlight: '100% Prático',
     },
     {
-      image: '/video-aulas.jpg',
+      image: '/garantia.jpeg',
       title: 'Acesso Vitalício Garantido',
       description: 'Volte às aulas sempre que quiser, sem limite de tempo. Atualizações futuras inclusas.',
       highlight: 'Atualizações Grátis',
     },
     {
-      image: '/batata_recheada_7.jpeg',
+      image: '/batata_recheada_16.jpeg',
       title: 'Receitas que Vendem!',
       description:
         'Aprenda receitas com alto potencial de lucro, testadas em vendas reais em feiras, deliveries e eventos.',
       highlight: 'Lucro na Cozinha',
     },
     {
-      image: '/cheff.jpg',
+      image: '/batata_recheada_17.jpeg',
       title: 'Suporte com Especialistas',
       description: 'Tire dúvidas diretamente com quem vive de comida e sabe o que realmente funciona.',
       highlight: 'Acompanhamento Profissional',
@@ -70,7 +70,7 @@ export default function BenefitsSection() {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Image Background */}
-              <div className="relative h-48 sm:h-56 overflow-hidden">
+              <div className="relative h-48 sm:h-[40vh] overflow-hidden">
                 <Image
                   src={benefit.image || '/placeholder.svg'}
                   alt={benefit.title}

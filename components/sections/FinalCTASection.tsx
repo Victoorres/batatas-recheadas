@@ -23,13 +23,13 @@ export default function FinalCTASection() {
         </div>
 
         <div className="bg-gradient-to-br from-[#1a1611] to-[#0f0d0a] rounded-2xl p-8 sm:p-10 lg:p-12 max-w-lg mx-auto border border-[#daa821]/30 mb-8 hover:border-[#daa821]/60 transition-all duration-300 hover:shadow-2xl hover:shadow-[#daa821]/20">
-          <div className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 incandescent-title pulse-glow">R$ 49,99</div>
+          <div className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 incandescent-title pulse-glow">R$ 24,99</div>
           <p className="text-gray-400 mb-8 text-base sm:text-lg">Oferta válida por tempo limitado</p>
 
           <Button
             className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl lg:text-2xl transition-all duration-300 shadow-lg shadow-green-600/30 animate-pulse-scale hover:shadow-green-600/50"
             onClick={() => window.open("https://monetizze.com.br", "_blank")}
-            aria-label="Comprar curso de batatas recheadas por R$ 49,99"
+            aria-label="Comprar curso de batatas recheadas por R$ 24,99"
           >
             🚀 GARANTIR ACESSO
           </Button>
