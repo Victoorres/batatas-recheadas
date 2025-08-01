@@ -8,7 +8,6 @@ import Image from 'next/image';
 export default function HeroSection() {
   return (
     <header className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20 text-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#daa821]/10 via-transparent to-[#1a1611]/20"></div>
 
       {/* Neon background effects */}
       <div className="absolute top-10 sm:top-20 left-1/4 w-32 sm:w-64 h-32 sm:h-64 bg-[#daa821]/20 rounded-full blur-3xl animate-pulse"></div>
