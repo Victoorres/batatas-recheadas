@@ -20,11 +20,11 @@ export default function HeroSection() {
         <div className="mb-6 sm:mb-2">
           <div className="relative inline-block">
             <Image
-              src="/logo.jpeg"
+              src="/logo.png"
               alt="BatataCheff - Curso de Batatas Recheadas Online"
               width={100}
               height={100}
-              className="w-[100%] h-[100%] sm:w-[60%] sm:h-[60%] rounded-xl object-cover mx-auto hover:scale-110 transition-transform duration-300"
+              className="w-[100%] h-[100%] sm:w-[80%] sm:h-[80%] rounded-xl object-cover mx-auto hover:scale-110 transition-transform duration-300"
               priority
             />
             <div className="absolute -inset-2 bg-[#daa821]/20 rounded-full blur-xl animate-pulse"></div>

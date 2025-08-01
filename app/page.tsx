@@ -12,7 +12,7 @@ import Footer from '@/components/sections/Footer';
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#010100] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#010100] text-white overflow-x-hidden bg-[url('/background.jpeg')] bg-cover bg-no-repeat bg-center">
       <HeroSection />
       <UpsellSection />
       <BenefitsSection />

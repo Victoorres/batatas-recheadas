@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Transforme batatas simples em pratos gourmet irresistíveis e fature alto com receitas exclusivas. Mais de 10.000 alunos já transformaram suas vidas!",
     images: [
       {
-        url: "/logo.jpeg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "BatataCheff - Curso de Batatas Recheadas",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Curso de Batatas Recheadas - Fature até R$ 5.000/mês",
     description:
       "Domine a arte das batatas recheadas com receitas exclusivas e método comprovado. Acesso vitalício por R$ 49,60.",
-    images: ["/logo.jpeg"],
+    images: ["/logo.png"],
     creator: "@batatacheff",
   },
   alternates: {
@@ -55,8 +55,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href="/logo.jpeg" />
-        <link rel="apple-touch-icon" href="/logo.jpeg" />
+        <link rel="icon" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         <meta name="theme-color" content="#daa821" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -74,7 +74,7 @@ export default function RootLayout({
                 "@type": "Organization",
                 name: "BatataCheff",
                 url: "https://batatacheff.com.br",
-                logo: "https://batatacheff.com.br/logo.jpeg",
+                logo: "https://batatacheff.com.br/logo.png",
               },
               offers: {
                 "@type": "Offer",
@@ -150,7 +150,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "BatataCheff",
               url: "https://batatacheff.com.br",
-              logo: "https://batatacheff.com.br/logo.jpeg",
+              logo: "https://batatacheff.com.br/logo.png",
               description:
                 "Escola online especializada em ensinar receitas de batatas recheadas e técnicas para montar um negócio lucrativo no ramo alimentício.",
               foundingDate: "2024",
