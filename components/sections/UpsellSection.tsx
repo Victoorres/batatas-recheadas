@@ -121,7 +121,7 @@ const CourseCard = ({ image, emoji, title, subtitle, price, oldPrice, features, 
       className="w-full bg-gradient-to-r from-[#daa821] via-yellow-400 to-[#daa821] hover:from-[#daa821]/80 hover:via-yellow-400/80 hover:to-[#daa821]/80 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg shadow-[#daa821]/30 animate-pulse-scale hover:shadow-[#daa821]/50 mb-4 relative overflow-hidden"
       onClick={() => window.open(link, '_blank')}
     >
-      <span className="relative z-10 md:text-2xl">GARANTIR AGORA</span>
+      <span className="relative z-10 md:text-2xl">✅ GARANTIR AGORA</span>
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-pulse"></div>
     </Button>
   </div>

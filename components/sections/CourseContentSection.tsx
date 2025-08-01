@@ -77,16 +77,16 @@ export default function CourseContentSection() {
               className="bg-gradient-to-br from-[#1a1611]/90 to-[#0f0d0a]/90 border-2 border-[#daa821]/30 hover:border-[#daa821]/80 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-[#daa821]/30 group overflow-hidden rounded-lg p-6 sm:p-8 text-center"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative mb-6 mx-auto w-24 h-24 sm:w-28 sm:h-28 lg:w-32 lg:h-32">
+              <div className="relative mb-6 mx-auto w-44 h-44 lg:w-60 lg:h-60">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#daa821]/20 to-green-500/20 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
                 <img
                   src={item.image || "/placeholder.svg"}
                   alt={item.alt}
-                  className="relative w-full h-full object-cover rounded-full border-2 border-[#daa821]/50 group-hover:border-[#daa821] transition-all duration-300 group-hover:scale-110"
+                  className="relative w-full h-full object-cover rounded-2xl border-2 border-[#daa821]/50 group-hover:border-[#daa821] transition-all duration-300 group-hover:scale-110"
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold mb-3 text-white group-hover:text-[#daa821] transition-colors duration-300 leading-tight incandescent-glow">
+              <h3 className="text-2xl xl:text-3xl font-bold mb-3 text-white group-hover:text-[#daa821] transition-colors duration-300 leading-tight incandescent-glow">
                 {item.title}
               </h3>
               <p className="text-sm sm:text-base lg:text-lg text-gray-400 group-hover:text-gray-300 transition-colors duration-300">

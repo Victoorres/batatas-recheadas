@@ -5,23 +5,17 @@ import Image from 'next/image';
 export default function BenefitsSection() {
   const benefits = [
     {
-      image: '/batata_recheada_13.jpeg',
-      title: 'Receitas Testadas e Aprovadas',
-      description: 'Mais de 50 receitas criadas por profissionais e validadas por centenas de alunos em todo o Brasil.',
-      highlight: '50+ Receitas Infalíveis',
+      image: '/certificado.jpeg',
+      title: 'Certificado de Conclusão',
+      description: 'Obtenha o seu certificado de gastronomia Batata Chef em loja ou casa.',
+      highlight: 'Certificado Incluso',
     },
     {
       image: '/batata_recheada_14.jpeg',
       title: 'Grupo de Apoio Exclusivo',
       description:
-        'Acesso a uma comunidade ativa no WhatsApp com dicas, feedbacks e trocas entre alunos e instrutores.',
+        'Acesso a uma comunidade ativa no Telegram com dicas, feedbacks e trocas entre alunos e instrutores.',
       highlight: 'Networking Real',
-    },
-    {
-      image: '/batata_recheada_15.jpeg',
-      title: 'Aulas Passo a Passo em Vídeo',
-      description: 'Aprenda visualmente com vídeos em alta qualidade mostrando cada etapa da receita, sem enrolação.',
-      highlight: '100% Prático',
     },
     {
       image: '/garantia.jpeg',
@@ -29,6 +23,13 @@ export default function BenefitsSection() {
       description: 'Volte às aulas sempre que quiser, sem limite de tempo. Atualizações futuras inclusas.',
       highlight: 'Atualizações Grátis',
     },
+    {
+      image: '/batata_recheada_15.jpeg',
+      title: 'Aulas Passo a Passo em Vídeo',
+      description: 'Aprenda visualmente com vídeos em alta qualidade mostrando cada etapa da receita, sem enrolação.',
+      highlight: '100% Prático',
+    },
+
     {
       image: '/batata_recheada_16.jpeg',
       title: 'Receitas que Vendem!',
@@ -75,7 +76,7 @@ export default function BenefitsSection() {
                   src={benefit.image || '/placeholder.svg'}
                   alt={benefit.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110 rounded-xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
 

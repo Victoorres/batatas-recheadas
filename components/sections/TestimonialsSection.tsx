@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
             Depoimentos de quem já faturou
           </h2>
           <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 text-center max-w-4xl mx-auto px-4">
-            Veja os resultados reais dos nossos alunos
+            Empresários em todo Brasil estão faturando alto com batata recheada
           </p>
         </div>
 
