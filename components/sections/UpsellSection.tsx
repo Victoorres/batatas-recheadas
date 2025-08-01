@@ -8,7 +8,7 @@ import CountdownTimer from '../shared/CountdownTimer';
 export default function UpsellSection() {
   return (
     <section
-      className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20"
+      className="py-12 sm:py-16 bg-gradient-to-b from-[#1a1611]/20 via-[#1a1611]/40 to-[#1a1611]/20"
       aria-labelledby="upsell-heading"
     >
       <div className="container mx-auto">
@@ -32,11 +32,11 @@ export default function UpsellSection() {
         <div className="text-center mb-8 sm:mb-12">
           <h2
             id="upsell-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-4 incandescent-title"
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-center mb-6 incandescent-title"
           >
             Cursos essenciais para turbinar seu faturamento!
           </h2>
-          <p className="text-lg sm:text-xl text-gray-300 text-center mb-12 sm:mb-16 max-w-3xl mx-auto px-4 incandescent-soft font-semibold">
+          <p className="text-xl sm:text-2xl lg:text-3xl text-gray-300 text-center max-w-4xl mx-auto px-4">
             Escolha o que mais combina com você ou aproveite todos separadamente.
           </p>
         </div>

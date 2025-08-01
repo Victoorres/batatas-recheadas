@@ -28,7 +28,7 @@ export default function FinalCTASection() {
 
           <Button
             className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full text-lg sm:text-xl lg:text-2xl transition-all duration-300 shadow-lg shadow-green-600/30 animate-pulse-scale hover:shadow-green-600/50"
-            onClick={() => window.open("https://monetizze.com.br", "_blank")}
+            onClick={() => window.open("https://pay.kiwify.com.br/3JLz0aS", "_blank")}
             aria-label="Comprar curso de batatas recheadas por R$ 24,99"
           >
             🚀 GARANTIR ACESSO
